@@ -40,6 +40,7 @@
 #include <algorithm>
 
 namespace seeta {
+	
 FaceIdentification::FaceIdentification(const char* model_path) {
   recognizer = new Recognizer(model_path);
 }

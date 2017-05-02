@@ -40,6 +40,8 @@ typedef float* FaceFeatures;
 namespace seeta {
 class FaceIdentification {
 public:
+
+  
   // For cropping face only, you don't need a identification model, modelPath  \
    can be set NULL.
   // For identification, you need to create a 'FaceIdentification' object with \

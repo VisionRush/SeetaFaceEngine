@@ -39,6 +39,9 @@ class CCFAN;
 namespace seeta {
 class FaceAlignment{
  public:
+  SEETA_API FaceAlignment();
+  SEETA_API void Init(const char* model_path);
+ 
   /** A constructor with an optional argument specifying path of the model file.
   *  If called with no argument, the model file is assumed to be stored in the
   *  the working directory as "seeta_fa_v1.1.bin".
@@ -46,7 +49,7 @@ class FaceAlignment{
   *  @param model_path Path of the model file, either absolute or relative to
   *  the working directory.
   */
-  SEETA_API FaceAlignment(const char* model_path = NULL);
+  SEETA_API FaceAlignment(const char* model_path);
 
   /** A Destructor which should never be called explicitly.
   *  Release all dynamically allocated resources.
